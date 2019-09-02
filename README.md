@@ -15,6 +15,9 @@
 <img width="100%" src="./src/assets/logo.png">
 
 
+## 📣Read this please!📣
+*The data provided by the API are in Spanish*
+
 ## 🚀 ... Deployment API [BASE URL]
 - `https://cinemanight.chrismichael.now.sh/api/v1/`
 

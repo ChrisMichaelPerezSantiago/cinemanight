@@ -97,6 +97,9 @@ const getByGenres = async(genre , page) =>{
         id: id || 'unknown',
         title: title || 'unknown',
         poster: poster || 'unknown',
+        rating: rating || 'unknown',
+        quality: quality || 'unknown',
+        year: year || 'unknown',
         sinopsis: sinopsis || 'unknown',
         type: type || 'unknown',
         extra: extra
@@ -107,6 +110,9 @@ const getByGenres = async(genre , page) =>{
         id: id || 'unknown',
         title: title || 'unknown',
         poster: poster || 'unknown',
+        rating: rating || 'unknown',
+        quality: quality || 'unknown',
+        year: year || 'unknown',
         sinopsis: sinopsis || 'unknown',
         type: type || 'unknown',
         extra: extra
@@ -116,8 +122,6 @@ const getByGenres = async(genre , page) =>{
   return await Promise.all(promises);
 }
 
-getByGenres('drama' , 1)
- .then(doc => console.log(doc))
 
 const search = async(title) =>{
   const res = await fetch(`${URL.SEARCH_URL}${title}`);

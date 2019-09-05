@@ -92,21 +92,32 @@ const getByGenres = async(genre , page) =>{
     const year = $element.find('.data span').text();
     const id = $element.find('.data h3 a').attr('href').split('/')[4];
     const type = $element.find('.data h3 a').attr('href').split('/')[3];
-    promises.push(movieHandler(id).then(extra => ({
-      id: id || 'unknown',
-      title: title || 'unknown',
-      type: type || 'unknown',
-      sinopsis: sinopsis || 'unknown',
-      poster: poster || 'unknown',
-      rating: rating || 'unknown',
-      quality: quality || 'unknown',
-      year: year || 'unknown',
-      extra: extra
-    })))
+    if(type === 'serie'){
+      promises.push(seriesHandler(id).then(async(extra) => ({
+        id: id || 'unknown',
+        title: title || 'unknown',
+        poster: poster || 'unknown',
+        sinopsis: sinopsis || 'unknown',
+        type: type || 'unknown',
+        extra: extra
+      })))
+    }
+    if(type === 'pelicula'){
+      promises.push(movieHandler(id).then(async(extra) => ({
+        id: id || 'unknown',
+        title: title || 'unknown',
+        poster: poster || 'unknown',
+        sinopsis: sinopsis || 'unknown',
+        type: type || 'unknown',
+        extra: extra
+      })))
+    }
   });
   return await Promise.all(promises);
 }
 
+getByGenres('drama' , 1)
+ .then(doc => console.log(doc))
 
 const search = async(title) =>{
   const res = await fetch(`${URL.SEARCH_URL}${title}`);

@@ -91,9 +91,11 @@ const getByGenres = async(genre , page) =>{
     const quality = $element.find('.poster .mepo span.quality').text();
     const year = $element.find('.data span').text();
     const id = $element.find('.data h3 a').attr('href').split('/')[4];
+    const type = $element.find('.data h3 a').attr('href').split('/')[3];
     promises.push(movieHandler(id).then(extra => ({
       id: id || 'unknown',
       title: title || 'unknown',
+      type: type || 'unknown',
       sinopsis: sinopsis || 'unknown',
       poster: poster || 'unknown',
       rating: rating || 'unknown',
@@ -104,7 +106,6 @@ const getByGenres = async(genre , page) =>{
   });
   return await Promise.all(promises);
 }
-
 
 
 const search = async(title) =>{

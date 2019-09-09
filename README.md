@@ -595,7 +595,7 @@ getMoviesVideoContent(id).then(doc => console.log(doc))
 
 ## 💡 Tips
 ## Indexing Pattern in season_list
-```javascripts
+```json
 // 20190908221826
 // https://cinemanight.chrismichael.now.sh/api/v1/search/juego%20de%20trono
 const season_list = {

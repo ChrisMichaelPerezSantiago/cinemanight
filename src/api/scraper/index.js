@@ -4,13 +4,29 @@ const axios = require('axios');
 const URL = require('./url/index.js');
 
 
+const episodesHandler = async(id) =>{
+  const res = await fetch(`${URL.EPISODES}/${id}`);
+  const body = await res.text();
+  const $ = cheerio.load(body);
+  const promises = [];
+  
+  $('#dt_contenedor #contenedor #single').each((index , element) =>{
+    const $element = $(element);
+    const sinopsis = $element.find('div  #info div.wp-content p').text();
+    console.log(sinopsis);
+
+    promises.push({
+      sinopsis: sinopsis || 'unknown',
+    });
+  });
+  return await Promise.all(promises);
+};
 
 const getSeriesVideoContent = async (id = "ver-dark-1x1") => {
   const res = await fetch(`${URL.EPISODES}/${id}`);
   const body = await res.text();
   const $ = cheerio.load(body);
   const videos = [];
-
 
   $('#dt_contenedor #contenedor #single #reproductor #playex .play-box-iframe').each((index, element) => {
     const $element = $(element);
@@ -25,7 +41,6 @@ const getSeriesVideoContent = async (id = "ver-dark-1x1") => {
   });
   return await Promise.all(videos);
 };
-
 
 const getMoviesVideoContent = async (id) => {
   const res = await fetch(`${URL.MOVIES_URL}/${id}`);
@@ -45,7 +60,6 @@ const getMoviesVideoContent = async (id) => {
   return await Promise.all(videos);
 };
 
-
 const getLatestEpisodes = async (page) => {
   const res = await fetch(`${URL.EPISODES}/page/${page}`);
   const body = await res.text();
@@ -60,16 +74,16 @@ const getLatestEpisodes = async (page) => {
     const quality = $element.find('.poster span.quality').text();
     const date = $element.find('.data span').text();
     const id = $element.find('div div.season_m.animation-1 a').attr('href').split('/')[4]
-    promises.push({
+    promises.push(episodesHandler(id).then(async (sinopsis) => ({
       id: id || 'unknown',
       title: title || 'unknown',
       episode_name: episode_name || 'unknown',
       poster: poster || 'unknown',
       date: date || 'unknown',
       quality: quality || 'unknown',
-    })
+      sinopsis: sinopsis[0].sinopsis
+    })))
   });
-  console.log(promises);
   return await Promise.all(promises);
 };
 
@@ -223,7 +237,6 @@ const movieHandler = async (id) => {
       members_info
     })
 
-
     const cast_members = {
       creator: {
         name: $element.find('#single.dtsingle .content #cast.sbox.fixidtab div.persons div.person div.img a img').eq(0).attr('alt') || 'unknown',
@@ -317,7 +330,6 @@ const seriesHandler = async (id) => {
     members_list.push({
       members_info
     })
-
 
     const cast_members = {
       creator: {

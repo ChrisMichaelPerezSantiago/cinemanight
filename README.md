@@ -52,62 +52,37 @@
 
 {
   "series": [
-    {
-      "id": "ver-the-a-list",
-      "title": "The A List",
-      "sinopsis": "Mia llega a un idílico campamento de verano esperando convertirse en el centro de atención, pero sus vacaciones de ensueño no tardan en convertirse en una pesadilla.",
-      "poster": "https://pedropolis.tv/wp-content/uploads/2019/08/osnDYGhH9Dsw7EkDZ4lDifrkYjI-185x278.jpg",
+     {
+      "id": "ver-departure-vuelo-716",
+      "title": "Departure: Vuelo 716",
+      "sinopsis": "Serie que investiga las conspiraciones que rodean al caso del vuelo 716: un avión de pasajeros que desaparece sobre el Océano Atlántico. Tras el misterioso accidente, Kendra Malley, una brillante investigadora de aviación que acaba de quedarse viuda, intentará esclarecer lo ocurrido a petición de su exjefe y mentor, Howard Lawson.",
+      "poster": "https://pedropolis.tv/wp-content/uploads/2019/09/9UX4O800c5PTVN7HcmdmFoevojB-185x278.jpg",
       "rating": "10",
-      "year": "2018",
+      "year": "2019",
       "extra": [
         {
-          "channel": "BBC ThreeBBC iPlayer",
-          "first_air_date": " First air date Oct. 25, 2018",
-          "last_air_date": " Última transmisión Oct. 25, 2018",
+          "channel": "unknown",
+          "first_air_date": " First air date Jul. 10, 2019",
+          "last_air_date": " Última transmisión Aug. 14, 2019",
           "total_seasons": "1",
-          "total_episodes": "13",
+          "total_episodes": "6",
           "season_list": [
             {
               "season": 1,
               "episodes": [
                 "1x1",
-                "1x2",
-                "1x3",
-                "1x4",
-                "1x5",
-                "1x6",
-                "1x7",
-                "1x8",
-                "1x9",
-                "1x10",
-                "1x11",
-                "1x12",
-                "1x13"
+                "1x2"
               ]
             }
           ],
           "cast_members": {
             "creator": {
-              "name": "Dan Berlinka",
-              "poster": "https://pedropolis.tv/wp-content/themes/dooplay/assets/img/no_foto_cast.png"
+              "name": "unknown",
+              "poster": "https://image.tmdb.org/t/p/w92"
             },
             "members_list": [
               {
                 "members_info": [
-                  {
-                    "characters": {
-                      "real_name": "Lisa Ambalavanar isMia",
-                      "character": "Mia"
-                    },
-                    "poster": "https://image.tmdb.org/t/p/w92/8bVWbpkqCBlE4G01fEpqJDpOvXK.jpg"
-                  },
-                  {
-                    "characters": {
-                      "real_name": "Ellie Duckles isAmber",
-                      "character": "Amber"
-                    },
-                    "poster": "https://image.tmdb.org/t/p/w92/33WZXcneQF6dPrHjFDC2os5NGjC.jpg"
-                  },
                   {
                     "characters": {
                       "real_name": "unknown",
@@ -134,97 +109,97 @@
 
 {
   movies: [
-     {
-      "id": "ver-men-in-black-internacional",
-      "title": "Hombres de negro: internacional",
-      "sinopsis": "En esta entrega, los Hombres de Negro, que siempre han protegido la Tierra, deben descubrir un topo dentro de la organización MIB. Para luchar contra unos nuevos malévolos aliens camuflados como humanos utilizarán una gran tecnología.",
-      "poster": "https://pedropolis.tv/wp-content/uploads/2019/06/bV7BDakL6lEol6z1NgZm8EfptTb-185x278.jpg",
+    {
+      "id": "ver-x-men-fenix-oscura",
+      "title": "X-Men: Fénix Oscura (X-Men: Dark Phoenix)",
+      "sinopsis": "Durante una misión de rescate en el espacio, Jean casi muere al ser alcanzada por una misteriosa fuerza cósmica. Cuando regresa a casa, esta fuerza no solo la ha hecho infinitamente más poderosa, sino también mucho más inestable. Mientras lucha con la entidad que habita en su interior, Jean desata sus poderes de formas que no puede controlar ni comprender. ...",
+      "poster": "https://pedropolis.tv/wp-content/uploads/2019/06/rdByKDkfyVuVSrkllzxKYXiZmTd-185x278.jpg",
       "rating": "9.2",
       "quality": "HD 1080",
       "year": "2019",
       "extra": [
         {
-          "air_date": "Jun. 12, 2019",
-          "country": "USA, UK",
-          "runtime": "115 Min",
-          "rated": "N/A",
+          "air_date": "Jun. 05, 2019",
+          "country": "USA",
+          "runtime": "114 Min",
+          "rated": "PG-13",
           "cast_members": {
             "creator": {
-              "name": "F. Gary Gray",
-              "poster": "https://image.tmdb.org/t/p/w92/6p11B9eBjvoiAY5Nyoao6Pm7a2J.jpg"
+              "name": "Simon Kinberg",
+              "poster": "https://image.tmdb.org/t/p/w92/yXlDADc2rLEMLTFZAw9irqXMq2J.jpg"
             },
             "members_list": [
               {
                 "members_info": [
                   {
                     "characters": {
-                      "real_name": "Chris Hemsworth isAgent H",
-                      "character": "Agent H"
+                      "real_name": "Sophie Turner isJean Grey / Dark Phoenix",
+                      "character": "Jean Grey / Dark Phoenix"
                     },
-                    "poster": "https://image.tmdb.org/t/p/w92/lrhth7yK9p3vy6p7AabDUM1THKl.jpg"
+                    "poster": "https://image.tmdb.org/t/p/w92/ed4ajSYdv49j9OF7yMeG8Hznrrt.jpg"
                   },
                   {
                     "characters": {
-                      "real_name": "Tessa Thompson isAgent M",
-                      "character": "Agent M"
+                      "real_name": "James McAvoy isCharles Xavier / Professor X",
+                      "character": "Charles Xavier / Professor X"
                     },
-                    "poster": "https://image.tmdb.org/t/p/w92/3POwFJPt9Mn7UqktzgoRQKjnfwp.jpg"
+                    "poster": "https://image.tmdb.org/t/p/w92/oPIfGm3mf4lbmO5pWwMvfTt5BM1.jpg"
                   },
                   {
                     "characters": {
-                      "real_name": "Liam Neeson isAgent High T",
-                      "character": "Agent High T"
+                      "real_name": "Michael Fassbender isErik Lensherr / Magneto",
+                      "character": "Erik Lensherr / Magneto"
                     },
-                    "poster": "https://image.tmdb.org/t/p/w92/9mdAohLsDu36WaXV2N3SQ388bvz.jpg"
+                    "poster": "https://image.tmdb.org/t/p/w92/oexNPLumoFpazzzUqzBSDDYiUg1.jpg"
                   },
                   {
                     "characters": {
-                      "real_name": "Rebecca Ferguson isRiza",
-                      "character": "Riza"
+                      "real_name": "Jennifer Lawrence isRaven Darkholme / Mystique",
+                      "character": "Raven Darkholme / Mystique"
                     },
-                    "poster": "https://image.tmdb.org/t/p/w92/dbIS4S32rrIJyEysx7huT6ZAmjN.jpg"
+                    "poster": "https://image.tmdb.org/t/p/w92/naZyy9IqAQDaAbr1kYShLdg6aPR.jpg"
                   },
                   {
                     "characters": {
-                      "real_name": "Emma Thompson isAgent O",
-                      "character": "Agent O"
+                      "real_name": "Jessica Chastain isVuk",
+                      "character": "Vuk"
                     },
-                    "poster": "https://image.tmdb.org/t/p/w92/cWTBHN8kLf6yapxiaQD9C6N1uMw.jpg"
+                    "poster": "https://image.tmdb.org/t/p/w92/lodMzLKSdrPcBry6TdoDsMN3Vge.jpg"
                   },
                   {
                     "characters": {
-                      "real_name": "Rafe Spall isAgent C",
-                      "character": "Agent C"
+                      "real_name": "Nicholas Hoult isHank McCoy / Beast",
+                      "character": "Hank McCoy / Beast"
                     },
-                    "poster": "https://image.tmdb.org/t/p/w92/7ucsDEWvcMU4SpxtZEaYErPpXHh.jpg"
+                    "poster": "https://image.tmdb.org/t/p/w92/h1gXgpuXERZTVhxMdjT7uvXIyq6.jpg"
                   },
                   {
                     "characters": {
-                      "real_name": "Kumail Nanjiani isPawny (voice)",
-                      "character": "Pawny (voice)"
+                      "real_name": "Evan Peters isPeter Maximoff / Quicksilver",
+                      "character": "Peter Maximoff / Quicksilver"
                     },
-                    "poster": "https://image.tmdb.org/t/p/w92/9EyrK1Cv7ey1h1GgmsVAOn45w6G.jpg"
+                    "poster": "https://image.tmdb.org/t/p/w92/2a1XA1ynmbZZj2nauwsc03OzRB.jpg"
                   },
                   {
                     "characters": {
-                      "real_name": "Jess Radomska isSpike - Alien",
-                      "character": "Spike - Alien"
+                      "real_name": "Tye Sheridan isScott Summers / Cyclops",
+                      "character": "Scott Summers / Cyclops"
                     },
-                    "poster": "https://image.tmdb.org/t/p/w92/yH9mnfx9YeWGqt1VlYZSzdiwrpv.jpg"
+                    "poster": "https://image.tmdb.org/t/p/w92/dECHNyAs5ZrEKYPN4LpyjczUzVd.jpg"
                   },
                   {
                     "characters": {
-                      "real_name": "Viktorija Faith isJellyfish Alien",
-                      "character": "Jellyfish Alien"
+                      "real_name": "Kodi Smit-McPhee isKurt Wagner / Nightcrawler",
+                      "character": "Kurt Wagner / Nightcrawler"
                     },
-                    "poster": "https://pedropolis.tv/wp-content/themes/dooplay/assets/img/no_foto_cast.png"
+                    "poster": "https://image.tmdb.org/t/p/w92/vJLSwYtJH8NHEUDh508XxewnrjD.jpg"
                   },
                   {
                     "characters": {
-                      "real_name": "Ania Sowinski isAlien Boss Wife",
-                      "character": "Alien Boss Wife"
+                      "real_name": "Alexandra Shipp isOroro Munroe / Storm",
+                      "character": "Ororo Munroe / Storm"
                     },
-                    "poster": "https://image.tmdb.org/t/p/w92/s8OcPfo6dAshyVXXCfDjBT7WYhk.jpg"
+                    "poster": "https://image.tmdb.org/t/p/w92/98AfO5NSqWnlhIxjSg08gGYdxUG.jpg"
                   },
                   {
                     "characters": {
@@ -616,6 +591,63 @@ getMoviesVideoContent(id).then(doc => console.log(doc))
     }
   ]
 }
+```
+
+## 💡 Tips
+## Indexing Pattern in season_list
+```json
+// 20190908221826
+// https://cinemanight.chrismichael.now.sh/api/v1/search/juego%20de%20trono
+const season_list = {
+    "season_list": [
+      {
+        "season": 1 , "episodes": ["1x1","1x2","1x3","1x4","1x5","1x6","1x7","1x8","1x9","1x10"]
+      },
+      {
+        "season": 2 , "episodes": ["2x1","2x2","2x3","2x4","2x5","2x6","2x7","2x8","2x9","2x10"]
+      },
+      {
+        "season": 3 , "episodes": ["3x1","3x2","3x3","3x4","3x5","3x6","3x7","3x8","3x9","3x10"]
+      },
+      {
+        "season": 4 , "episodes": ["4x1","4x2","4x3","4x4","4x5","4x6","4x7","4x8","4x9","4x10"]
+      },
+      {
+        "season": 5 , "episodes": ["5x1","5x2","5x3","5x4","5x5","5x6","5x7","5x8","5x9","5x10"]
+      },
+      {
+        "season": 6 , "episodes": ["6x1","6x2","6x3","6x4","6x5","6x6","6x7","6x8","6x9","6x10"]
+      },
+      {
+        "season": 7 , "episodes": ["7x1","7x2","7x3","7x4","7x5","7x6","7x7"]
+      },
+      {
+        "season": 8 , "episodes": ["8x1","8x2","8x3","8x4","8x5","8x6"]
+      }
+    ]
+}
+```
+```javascript
+// indexing season_list by seasons
+const bySeason = season_list.season_list.reduce((byId , seasons) =>{
+  byId[seasons.season] = seasons;
+  return byId;
+} , {});
+
+//output
+{ 
+  1:  { season: 1 , episodes: [ '1x1','1x2','1x3','1x4','1x5','1x6','1x7','1x8','1x9','1x10']}, 
+  2:  { season: 2 , episodes: [ '2x1','2x2','2x3','2x4','2x5','2x6','2x7','2x8','2x9','2x10']}, 
+  3:  { season: 3 , episodes: [ '3x1','3x2','3x3','3x4','3x5','3x6','3x7','3x8','3x9','3x10']}, 
+  4:  { season: 4 , episodes: [ '4x1','4x2','4x3','4x4','4x5','4x6','4x7','4x8','4x9','4x10']}, 
+  5:  { season: 5 , episodes: [ '5x1','5x2','5x3','5x4','5x5','5x6','5x7','5x8','5x9','5x10']}, 
+  6:  { season: 6 , episodes: ['6x1','6x2','6x3','6x4','6x5','6x6','6x7','6x8','6x9','6x10']}, 
+  7:  { season: 7 , episodes: ['7x1','7x2','7x3','7x4','7x5','7x6','7x7']}, 
+  8:  { season: 8 , episodes: ['8x1','8x2','8x3','8x4','8x5','8x6']}
+} 
+
+//way to access a season
+console.log(bySeason[1]); // [ '1x1','1x2','1x3','1x4','1x5','1x6','1x7','1x8','1x9','1x10']
 ```
 
 ## License

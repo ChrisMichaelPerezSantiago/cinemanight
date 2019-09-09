@@ -244,12 +244,25 @@ const movieHandler = async (id) => {
       },
       members_list: members_list
     }
+
+    const similar_movies = [];
+    $element.find('#single_relacionados article').each((index , el) =>{
+      const $el = $(el);
+      const id = $el.find('a').attr('href').split('/')[4]
+      const poster = $el.find('a img').attr('src');
+      similar_movies.push({
+        id: id || 'unknown',
+        poster: poster || 'unknown',
+      });
+    });
+
     promises.push({
       air_date: air_date || 'unknown',
       country: country || 'unknown',
       runtime: runtime || 'unknown',
       rated: rated || 'unknown',
-      cast_members: cast_members
+      cast_members: cast_members,
+      similar_movies: similar_movies
     });
   });
 
@@ -338,6 +351,18 @@ const seriesHandler = async (id) => {
       },
       members_list: members_list
     }
+
+    const similar_series = [];
+    $element.find('#single_relacionados article').each((index , el) =>{
+      const $el = $(el);
+      const id = $el.find('a').attr('href').split('/')[4]
+      const poster = $el.find('a img').attr('src');
+      similar_series.push({
+        id: id || 'unknown',
+        poster: poster || 'unknown',
+      });
+    });
+
     promises.push({
       channel: channel || 'unknown',
       first_air_date: first_air_date || 'unknown',
@@ -345,7 +370,8 @@ const seriesHandler = async (id) => {
       total_seasons: total_seasons || 'unknown',
       total_episodes: total_episodes || 'unknown',
       season_list: season_list || 'unknown',
-      cast_members: cast_members
+      cast_members: cast_members,
+      similar_series: similar_series
     })
   });
   return await Promise.all(promises);

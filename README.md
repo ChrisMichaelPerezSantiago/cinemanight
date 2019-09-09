@@ -497,25 +497,31 @@
 {
   "episodes": [
     {
-      "id": "ver-sanditon-1x2",
-      "title": "Sanditon: 1×2",
-      "episode_name": " Episodio 2",
-      "poster": "https://pedropolis.tv/wp-content/uploads/2019/09/odHeaVleTdrN6d5SKADRFU26ymR-300x170.jpg",
-      "quality": "HD 1080"
+      "id": "ver-los-rios-de-color-purpura-1x4",
+      "title": "Los ríos de color púrpura: 1×4",
+      "episode_name": " El día de las cenizas (2)",
+      "poster": "https://pedropolis.tv/wp-content/uploads/2019/09/cszdWR5z8a65CPTeCjTARNslwjV-300x170.jpg",
+      "date": "Dec. 03, 2018",
+      "quality": "HD 1080",
+      "sinopsis": "Cuando Niemans obtiene imágenes de rayos X de los frescos dañados, proporcionan más información sobre el caso, pero ¿un fragmento faltante de las escenas bíblicas retratadas tiene la clave del asesino?"
     },
     {
-      "id": "ver-my-life-is-murder-1x7",
-      "title": "My Life Is Murder: 1×7",
-      "episode_name": " Vieja escuela",
-      "poster": "https://pedropolis.tv/wp-content/uploads/2019/08/mi-300x170.jpg",
-      "quality": "HD 1080"
+      "id": "ver-los-rios-de-color-purpura-1x3",
+      "title": "Los ríos de color púrpura: 1×3",
+      "episode_name": " El día de las cenizas (1)",
+      "poster": "https://pedropolis.tv/wp-content/uploads/2019/09/wntYgHDhaLDNPTdBH1CCp1A5j89-300x170.jpg",
+      "date": "Dec. 03, 2018",
+      "quality": "HD 1080",
+      "sinopsis": "En una región vitivinícola en la época de la cosecha, se descubre un cadáver maltratado bajo los escombros cuando una bóveda se derrumba durante la renovación de una capilla, destruyendo un fresco. ¿Fue un accidente o un juego sucio?"
     },
     {
-      "id": "ver-los-rios-de-color-purpura-1x1",
-      "title": "Los ríos de color púrpura: 1×1",
-      "episode_name": " La última caza (1)",
-      "poster": "https://pedropolis.tv/wp-content/uploads/2019/03/oduP3Di75bXAqhfXRa8GmhoJoNN-300x170.jpg",
-      "quality": "HD 1080"
+      "id": "ver-toy-boy-1x1",
+      "title": "Toy Boy: 1×1",
+      "episode_name": " Capítulo 1",
+      "poster": "https://pedropolis.tv/wp-content/uploads/2019/09/toy1-300x170.jpg",
+      "date": "Sep. 08, 2019",
+      "quality": "HD 1080",
+      "sinopsis": "‘Toy Boy’ es un thriller que cuenta la historia de Hugo, un stripper que, gracias a su juventud y atractivo, había conseguido llevar una vida despreocupada. Todo se torció para él cuando, tras una excesiva fiesta nocturna, se despierta en un velero junto al cadáver del marido de su amante, Macarena, lo que le llevará a la cárcel. Tras siete años en prisión, conoce a Triana, una joven abogada que, en nombre de unos intereses ocultos y poderosos, consigue su liberación provisional."
     },
     // ...........
   ]

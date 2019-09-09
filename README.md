@@ -95,7 +95,57 @@
                 ]
               }
             ]
-          }
+          },
+          "similar_series": [
+            {
+              "id": "press",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2019/03/9cuIcceq9JiVkWsSZonj0hglDAT-185x278.jpg"
+            },
+            {
+              "id": "ver-cheat",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2019/03/gVhL9jFUMikxLYjA1m3ZwRvkQw3-185x278.jpg"
+            },
+            {
+              "id": "ver-el-tigre-veron",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2019/07/lzKsTPZzzNfUsTKXzRVobhs4C5N-185x278.jpg"
+            },
+            {
+              "id": "muneca-rusa",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2019/02/4WijEAbnGMJifP6uepGALci3Jf-185x278.jpg"
+            },
+            {
+              "id": "ozark",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2018/08/tNDZavjaXfO8poyBY6zpO54aL2e-185x278.jpg"
+            },
+            {
+              "id": "ver-the-twilight-zone",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2019/04/7gTd9tIEHlDeS07KIt4aYeN9svx-185x278.jpg"
+            },
+            {
+              "id": "ver-les-miserables",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2019/01/vD5gUfFYEuYXwfOVJQjLIQTGs0s-185x278.jpg"
+            },
+            {
+              "id": "greyzone",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2018/06/t2K3JAWCuu8kXBJ2vPMt44go1F7-185x278.jpg"
+            },
+            {
+              "id": "lykkeland",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2019/01/87L3UF1Y0gAMufigq6J9NyKz2xg-185x278.jpg"
+            },
+            {
+              "id": "ver-metodo",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2019/06/igejqMFDYKThcLLNcoOlSxZICmz-185x278.jpg"
+            },
+            {
+              "id": "ver-too-old-to-die-young",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2019/06/cG9tZhKilWl5BhtKIPp5mABT1el-185x278.jpg"
+            },
+            {
+              "id": "kiss-me-first",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2018/04/ki.jpg"
+            }
+          ]
         }
       ]
     },
@@ -213,7 +263,57 @@
                 ]
               }
             ]
-          }
+          },
+          "similar_movies": [
+            {
+              "id": "la-primera-purga-la-noche-de-las-bestias",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2018/07/pu-185x278.jpg"
+            },
+            {
+              "id": "ver-rompiendo-las-reglas-2",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2019/04/wQkYieCKVzRglLvJADSEHMm12Fm-185x278.jpg"
+            },
+            {
+              "id": "the-bad-cat",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2018/09/mdnSGvu7IWfDye27a19U6xqKQgO-185x278.jpg"
+            },
+            {
+              "id": "codigo-oculto-branded",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2018/08/5qSWvkvbG4b0ZZov1obLovxFHg7-185x278.jpg"
+            },
+            {
+              "id": "tigre-y-dragon-2-la-espada-del-destino",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2016/02/draa-185x278.jpg"
+            },
+            {
+              "id": "ver-asher",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2019/06/o5p4Ev49KVR4itGWy3OHyqnRsz8-185x278.jpg"
+            },
+            {
+              "id": "ver-between-worlds",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2018/12/kage-185x278.jpg"
+            },
+            {
+              "id": "ver-trauma",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2018/12/enDtNl8gS60QQd9eoVPGQ2T6Dlq-185x278.jpg"
+            },
+            {
+              "id": "ver-el-hombre-que-mato-a-don-quijote",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2018/11/3PGBzDjZf2IWHIAi1f4lpTuIQJI-185x278.jpg"
+            },
+            {
+              "id": "pesadillas",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2018/08/vlK07mEpwyIXlrnYEQwWpPgmAaW-185x278.jpg"
+            },
+            {
+              "id": "jungle",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2018/08/jun-185x278.jpg"
+            },
+            {
+              "id": "ploey-nunca-volaras-solo-ploey-you-never-fly-alone",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2018/04/PLOEY-185x278.jpg"
+            }
+          ]
         }
       ]
     },

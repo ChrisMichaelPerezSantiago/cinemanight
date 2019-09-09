@@ -6,7 +6,7 @@
   </a>
   <a href="https://github.com/ChrisMichaelPerezSantiago/cinemanight/blob/master/LICENSE">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" target="_blank" />
-  </a>
+  </a><br>
   <a href="https://nodei.co/npm/cinemanight/"><img src="https://nodei.co/npm/cinemanight.png"></a>
 
 

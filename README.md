@@ -626,7 +626,8 @@ const season_list = {
       }
     ]
 }
-
+```
+```javascript
 // indexing season_list by seasons
 const bySeason = season_list.season_list.reduce((byId , seasons) =>{
   byId[seasons.season] = seasons;

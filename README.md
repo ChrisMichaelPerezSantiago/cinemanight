@@ -593,6 +593,62 @@ getMoviesVideoContent(id).then(doc => console.log(doc))
 }
 ```
 
+## 💡 Tips
+## Indexing Pattern in season_list
+```javascripts
+// 20190908221826
+// https://cinemanight.chrismichael.now.sh/api/v1/search/juego%20de%20trono
+const season_list = {
+    "season_list": [
+      {
+        "season": 1 , "episodes": ["1x1","1x2","1x3","1x4","1x5","1x6","1x7","1x8","1x9","1x10"]
+      },
+      {
+        "season": 2 , "episodes": ["2x1","2x2","2x3","2x4","2x5","2x6","2x7","2x8","2x9","2x10"]
+      },
+      {
+        "season": 3 , "episodes": ["3x1","3x2","3x3","3x4","3x5","3x6","3x7","3x8","3x9","3x10"]
+      },
+      {
+        "season": 4 , "episodes": ["4x1","4x2","4x3","4x4","4x5","4x6","4x7","4x8","4x9","4x10"]
+      },
+      {
+        "season": 5 , "episodes": ["5x1","5x2","5x3","5x4","5x5","5x6","5x7","5x8","5x9","5x10"]
+      },
+      {
+        "season": 6 , "episodes": ["6x1","6x2","6x3","6x4","6x5","6x6","6x7","6x8","6x9","6x10"]
+      },
+      {
+        "season": 7 , "episodes": ["7x1","7x2","7x3","7x4","7x5","7x6","7x7"]
+      },
+      {
+        "season": 8 , "episodes": ["8x1","8x2","8x3","8x4","8x5","8x6"]
+      }
+    ]
+}
+
+// indexing season_list by seasons
+const bySeason = season_list.season_list.reduce((byId , seasons) =>{
+  byId[seasons.season] = seasons;
+  return byId;
+} , {});
+
+//output
+{ 
+  1:  { season: 1 , episodes: [ '1x1','1x2','1x3','1x4','1x5','1x6','1x7','1x8','1x9','1x10']}, 
+  2:  { season: 2 , episodes: [ '2x1','2x2','2x3','2x4','2x5','2x6','2x7','2x8','2x9','2x10']}, 
+  3:  { season: 3 , episodes: [ '3x1','3x2','3x3','3x4','3x5','3x6','3x7','3x8','3x9','3x10']}, 
+  4:  { season: 4 , episodes: [ '4x1','4x2','4x3','4x4','4x5','4x6','4x7','4x8','4x9','4x10']}, 
+  5:  { season: 5 , episodes: [ '5x1','5x2','5x3','5x4','5x5','5x6','5x7','5x8','5x9','5x10']}, 
+  6:  { season: 6 , episodes: ['6x1','6x2','6x3','6x4','6x5','6x6','6x7','6x8','6x9','6x10']}, 
+  7:  { season: 7 , episodes: ['7x1','7x2','7x3','7x4','7x5','7x6','7x7']}, 
+  8:  { season: 8 , episodes: ['8x1','8x2','8x3','8x4','8x5','8x6']}
+} 
+
+//way to access a season
+console.log(bySeason[1]); // [ '1x1','1x2','1x3','1x4','1x5','1x6','1x7','1x8','1x9','1x10']
+```
+
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/ChrisMichaelPerezSantiago/cinemanight/blob/master/LICENSE) file for details.
 

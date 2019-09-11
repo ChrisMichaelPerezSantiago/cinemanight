@@ -66,6 +66,9 @@ const getLatestEpisodes = async (page) => {
   const $ = cheerio.load(body);
   const promises = [];
 
+  const pages = $('div#dt_contenedor div#contenedor div.module div.content div.pagination span').eq(0).text().match(/\d+(?:\.\d+)?/g)
+  const page_info = {start: pages[0] , end: pages[1]} || 'unknown'; 
+
   $('article').each((index, element) => {
     const $element = $(element);
     const title = $element.find('.poster img').attr('alt');
@@ -84,6 +87,9 @@ const getLatestEpisodes = async (page) => {
       sinopsis: sinopsis[0].sinopsis
     })))
   });
+  promises.push({
+    page_info: page_info
+  })
   return await Promise.all(promises);
 };
 
@@ -185,6 +191,9 @@ const getAllMovies = async (page = 1) => {
   const promises = [];
   const $ = cheerio.load(body);
 
+  const pages = $('div#dt_contenedor div#contenedor div.module div.content div.pagination span').eq(0).text().match(/\d+(?:\.\d+)?/g)
+  const page_info = {start: pages[0] , end: pages[1]} || 'unknown'; 
+
   $('article').each((index, element) => {
     const $element = $(element);
     const title = $element.find('.animation-1 .title h4').text();
@@ -205,6 +214,9 @@ const getAllMovies = async (page = 1) => {
       extra: extra
     })))
   });
+  promises.push({
+    page_info: page_info
+  })
   return await Promise.all(promises);
 }
 
@@ -276,6 +288,9 @@ const getAllSeries = async (page = 1) => {
   const promises = [];
   const $ = cheerio.load(body);
 
+  const pages = $('div#dt_contenedor div#contenedor div.module div.content div.pagination span').eq(0).text().match(/\d+(?:\.\d+)?/g)
+  const page_info = {start: pages[0] , end: pages[1]} || 'unknown'; 
+
   $('article').each((index, element) => {
     const $element = $(element);
     const title = $element.find('.animation-1 .title h4').text();
@@ -294,6 +309,9 @@ const getAllSeries = async (page = 1) => {
       extra: extra || 'unknown'
     })))
   });
+  promises.push({
+    page_info: page_info
+  })
   return await Promise.all(promises);
 };
 

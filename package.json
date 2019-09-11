@@ -1,6 +1,6 @@
 {
   "name": "cinemanight",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": " API with access to movies and series content, scraping the pedropolis.tv page",
   "main": "./src/api/scraper/index.js",
   "scripts": {

@@ -87,9 +87,7 @@ const getLatestEpisodes = async (page) => {
       sinopsis: sinopsis[0].sinopsis
     })))
   });
-  promises.push({
-    page_info: page_info
-  })
+  //promises.push({page_info: page_info})
   return await Promise.all(promises);
 };
 
@@ -214,9 +212,7 @@ const getAllMovies = async (page = 1) => {
       extra: extra
     })))
   });
-  promises.push({
-    page_info: page_info
-  })
+  //promises.push({page_info: page_info})
   return await Promise.all(promises);
 }
 
@@ -309,9 +305,7 @@ const getAllSeries = async (page = 1) => {
       extra: extra || 'unknown'
     })))
   });
-  promises.push({
-    page_info: page_info
-  })
+  //promises.push({page_info: page_info})
   return await Promise.all(promises);
 };
 

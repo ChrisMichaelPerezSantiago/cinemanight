@@ -13,7 +13,6 @@ const episodesHandler = async(id) =>{
   $('#dt_contenedor #contenedor #single').each((index , element) =>{
     const $element = $(element);
     const sinopsis = $element.find('div  #info div.wp-content p').text();
-    console.log(sinopsis);
 
     promises.push({
       sinopsis: sinopsis || 'unknown',
@@ -22,7 +21,7 @@ const episodesHandler = async(id) =>{
   return await Promise.all(promises);
 };
 
-const getSeriesVideoContent = async (id = "ver-dark-1x1") => {
+const getSeriesVideoContent = async (id) => {
   const res = await fetch(`${URL.EPISODES}/${id}`);
   const body = await res.text();
   const $ = cheerio.load(body);
@@ -66,8 +65,8 @@ const getLatestEpisodes = async (page) => {
   const $ = cheerio.load(body);
   const promises = [];
 
-  const pages = $('div#dt_contenedor div#contenedor div.module div.content div.pagination span').eq(0).text().match(/\d+(?:\.\d+)?/g)
-  const page_info = {start: pages[0] , end: pages[1]} || 'unknown'; 
+  //const pages = $('div#dt_contenedor div#contenedor div.module div.content div.pagination span').eq(0).text().match(/\d+(?:\.\d+)?/g)
+  //const page_info = {start: pages[0] , end: pages[1]} || 'unknown'; 
 
   $('article').each((index, element) => {
     const $element = $(element);
@@ -189,8 +188,8 @@ const getAllMovies = async (page = 1) => {
   const promises = [];
   const $ = cheerio.load(body);
 
-  const pages = $('div#dt_contenedor div#contenedor div.module div.content div.pagination span').eq(0).text().match(/\d+(?:\.\d+)?/g)
-  const page_info = {start: pages[0] , end: pages[1]} || 'unknown'; 
+  //const pages = $('div#dt_contenedor div#contenedor div.module div.content div.pagination span').eq(0).text().match(/\d+(?:\.\d+)?/g)
+  //const page_info = {start: pages[0] , end: pages[1]} || 'unknown'; 
 
   $('article').each((index, element) => {
     const $element = $(element);
@@ -284,8 +283,8 @@ const getAllSeries = async (page = 1) => {
   const promises = [];
   const $ = cheerio.load(body);
 
-  const pages = $('div#dt_contenedor div#contenedor div.module div.content div.pagination span').eq(0).text().match(/\d+(?:\.\d+)?/g)
-  const page_info = {start: pages[0] , end: pages[1]} || 'unknown'; 
+  //const pages = $('div#dt_contenedor div#contenedor div.module div.content div.pagination span').eq(0).text().match(/\d+(?:\.\d+)?/g)
+  //const page_info = {start: pages[0] , end: pages[1]} || 'unknown'; 
 
   $('article').each((index, element) => {
     const $element = $(element);

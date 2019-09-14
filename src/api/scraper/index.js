@@ -153,7 +153,7 @@ const search = async (title) => {
       const $element = $(element);
       const title = $element.find('.details .title').text().trim();
       const poster = $element.find('.image .thumbnail.animation-2 a img').attr('src');
-      const synopsis = $element.find('.details .contenido p').text();
+      const sinopsis = $element.find('.details .contenido p').text();
       const type = $element.find('.details .title a').attr('href').split('/')[3];
       const id = $element.find('.details .title a').attr('href').split('/')[4];
 
@@ -162,7 +162,7 @@ const search = async (title) => {
           id: id || 'unknown',
           title: title || 'unknown',
           poster: poster || 'unknown',
-          synopsis: synopsis || 'unknown',
+          sinopsis: sinopsis || 'unknown',
           type: type || 'unknown',
           extra: extra
         })))
@@ -172,7 +172,7 @@ const search = async (title) => {
           id: id || 'unknown',
           title: title || 'unknown',
           poster: poster || 'unknown',
-          synopsis: synopsis || 'unknown',
+          sinopsis: sinopsis || 'unknown',
           type: type || 'unknown',
           extra: extra
         })))

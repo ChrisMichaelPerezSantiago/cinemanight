@@ -333,7 +333,7 @@
       "id": "ver-dark",
       "title": "Dark",
       "poster": "https://pedropolis.tv/wp-content/uploads/2019/06/5LoHuHWA4H8jElFlZDvsmU2n63b-150x150.jpg",
-      "synopsis": "Tras la desaparición de un niño, cuatro familias desesperadas tratan de entender lo ocurrido a medida que van desvelando un retorcido misterio que abarca tres décadas… Saga familiar con un giro ...",
+      "sinopsis": "Tras la desaparición de un niño, cuatro familias desesperadas tratan de entender lo ocurrido a medida que van desvelando un retorcido misterio que abarca tres décadas… Saga familiar con un giro ...",
       "type": "serie",
       "extra": [
         {

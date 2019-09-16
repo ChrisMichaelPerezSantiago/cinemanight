@@ -30,6 +30,7 @@
 - `https://cinemanight.chrismichael.now.sh/api/v1/search/Dark`
 - `https://cinemanight.chrismichael.now.sh/api/v1/genres/accion/1`
 - `https://cinemanight.chrismichael.now.sh/api/v1/episodes/1`
+- `https://cinemanight.chrismichael.now.sh/api/v1/latestEpisodes`
 - `https://cinemanight.chrismichael.now.sh/api/v1/video_serie/ver-dark-2x8`
 - `https://cinemanight.chrismichael.now.sh/api/v1/video_movie/ver-x-men-fenix-oscura/`
 

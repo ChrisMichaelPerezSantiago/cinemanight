@@ -64,6 +64,17 @@ router.get('/episodes/:page' , (req , res) =>{
     });
 });
 
+router.get('/latestEpisodes' , (req , res) =>{
+  f.getLatestEpisodesAdded()
+    .then(episodes =>{
+      res.status(200).json({
+        episodes
+      });
+    }).catch(err =>{
+      console.log(err);
+    });
+});
+
 router.get('/video_serie/:id' , (req , res) =>{
   const id = req.params.id;
   f.getSeriesVideoContent(id)

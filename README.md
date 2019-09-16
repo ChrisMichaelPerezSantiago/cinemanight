@@ -40,6 +40,7 @@
 - getAllMovies
 - getByGenres
 - getLatestEpisodes
+- getLatestEpisodesAdded
 - getSeriesVideoContent
 - getMoviesVideoContent
 
@@ -629,6 +630,44 @@
   ]
 }
 ```
+
+### getLatestEpisodesAdded()
+```json
+// 20190916104207
+// http://localhost:5000/api/v1/latestEpisodes
+
+{
+  "episodes": [
+    {
+      "id": "ver-los-rios-de-color-purpura-1x6",
+      "title": "Los ríos de color púrpura: 1×6",
+      "episode_name": " La cruzada de los niños (2)",
+      "poster": "https://pedropolis.tv/wp-content/uploads/2019/09/3RsqrpWhwJe1R5yBRtPOdmp3uM1-300x170.jpg",
+      "date": "Dec. 10, 2018",
+      "quality": "HD 1080",
+      "sinopsis": "Dos personas más son asesinadas en el cementerio: una pareja casada que acogió a niños adoptivos. Pero una cita de un cuento antiguo sobre un grupo de niños desafortunados en un monumento proporciona una pista."
+    },
+    {
+      "id": "ver-los-rios-de-color-purpura-1x5",
+      "title": "Los ríos de color púrpura: 1×5",
+      "episode_name": " La cruzada de los niños (1)",
+      "poster": "https://pedropolis.tv/wp-content/uploads/2019/09/ugzppVfB67KvWO3AwngYNFgCFQ9-300x170.jpg",
+      "date": "Dec. 10, 2018",
+      "quality": "HD 1080",
+      "sinopsis": "Cuando dos hombres descubren la mano cortada de un niño, Niemans y Camille encuentran a la policía local distraída por el caso de un asesino en serie armado con un rifle. ¿Pueden encontrar pistas en la casa de un niño?"
+    },
+    {
+      "id": "ver-the-gulf-1x3",
+      "title": "The Gulf: 1×3",
+      "episode_name": " Episodio 3",
+      "poster": "https://pedropolis.tv/wp-content/uploads/2019/09/tg3-300x170.jpg",
+      "date": "Sep. 09, 2019",
+      "quality": "HD 1080",
+      "sinopsis": "Max Lee quiere respuestas sobre su hija desaparecida y Jess debe tomar el caso. Ruby tiene algunas noticias y se descubre algo horrible en los manglares."
+    },
+    // ...........
+  ]
+}
 
 ### getSeriesVideoContent([id])
 *The param **id** is a combination of the **id** of each series + **episodes list**.*

@@ -669,6 +669,7 @@
     // ...........
   ]
 }
+```
 
 ### getSeriesVideoContent([id])
 *The param **id** is a combination of the **id** of each series + **episodes list**.*

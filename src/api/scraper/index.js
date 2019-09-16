@@ -4,6 +4,34 @@ const axios = require('axios');
 const URL = require('./url/index.js');
 
 
+const getLatestEpisodesAdded = async () =>{
+  const BASE_URL = 'https://pedropolis.tv/';
+  const res = await fetch(BASE_URL);
+  const body = await res.text();
+  const $ = cheerio.load(body);
+  const promises = [];
+
+  $('#dt_contenedor #contenedor div div #dt-episodes article').each((index , element) =>{
+    const $element = $(element);
+    const title = $element.find('div.poster img').attr('alt');
+    const episode_name = $element.find('div.data h3').text();
+    const poster = $element.find('div.poster img').attr('src');
+    const quality = $element.find('div.poster span.quality').text();
+    const date = $element.find('div.data span').text();
+    const id = $element.find('div.poster div.season_m a').attr('href').split('/')[4];
+    promises.push(episodesHandler(id).then(async (sinopsis) => ({
+      id: id || 'unknown',
+      title: title || 'unknown',
+      episode_name: episode_name || 'unknown',
+      poster: poster || 'unknown',
+      date: date || 'unknown',
+      quality: quality || 'unknown',
+      sinopsis: sinopsis[0].sinopsis
+    })))
+  });
+  return await Promise.all(promises)
+};
+
 const episodesHandler = async(id) =>{
   const res = await fetch(`${URL.EPISODES}/${id}`);
   const body = await res.text();
@@ -395,6 +423,7 @@ module.exports = {
   getAllMovies,
   getByGenres,
   getLatestEpisodes,
+  getLatestEpisodesAdded,
   getSeriesVideoContent,
   getMoviesVideoContent
 };

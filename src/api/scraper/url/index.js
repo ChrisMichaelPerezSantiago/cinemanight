@@ -5,5 +5,6 @@ module.exports = {
   MOVIES_URL: `${BASE_URL}/pelicula`,
   SEARCH_URL: `${BASE_URL}/?s=`,
   GENRES: `${BASE_URL}/genero`,
-  EPISODES: `${BASE_URL}/episodio`
+  EPISODES: `${BASE_URL}/episodio`,
+  RANKING_IMDB_URL: `${BASE_URL}/raking-imdb`
 };

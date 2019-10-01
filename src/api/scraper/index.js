@@ -4,6 +4,61 @@ const axios = require('axios');
 const URL = require('./url/index.js');
 
 
+const getBestMoviesRanked = async () =>{
+  const res = await fetch(`${URL.RANKING_IMDB_URL}`);
+  const body = await res.text();
+  const $ = cheerio.load(body);
+  const promises = [];
+
+  $('div#dt_contenedor div.top-imdb-list.tleft div.top-imdb-item').each((index , element) =>{
+    const $element = $(element);
+    const id = $element.find('div.title a').attr('href').split('/')[4];
+    const title = $element.find('div.title').first().text();
+    const type = $element.find('div.title a').attr('href').split('/')[3];
+    const poster = $element.find('div.image div.poster a img').attr('src');
+    const ranking = $element.find('div.puesto').text();
+    const rating = $element.find('div.rating').text();
+    promises.push(movieHandler(id).then(extra => ({
+      id: id || 'unknown',
+      title: title || 'unknown',
+      type: type || 'unknown',
+      poster: poster || 'unknown',
+      ranking: ranking || 'unknown',
+      rating: rating || 'unknown',
+      extra: extra
+    })));
+  });
+  return await Promise.all(promises);
+}
+
+const getBestSeriesRanked = async () =>{
+  const res = await fetch(`${URL.RANKING_IMDB_URL}`);
+  const body = await res.text();
+  const $ = cheerio.load(body);
+  const promises = [];
+
+  $('div#dt_contenedor div.top-imdb-list.tright div.top-imdb-item').each((index , element) =>{
+    const $element = $(element);
+    const id = $element.find('div.title a').attr('href').split('/')[4];
+    const title = $element.find('div.title').first().text();
+    const type = $element.find('div.title a').attr('href').split('/')[3];
+    const poster = $element.find('div.image div.poster a img').attr('src');
+    const ranking = $element.find('div.puesto').text();
+    const rating = $element.find('div.rating').text();
+    promises.push(seriesHandler(id).then(extra => ({
+      id: id || 'unknown',
+      title: title || 'unknown',
+      type: type || 'unknown',
+      poster: poster || 'unknown',
+      ranking: ranking || 'unknown',
+      rating: rating || 'unknown',
+      extra: extra
+    })));
+  });
+  return await Promise.all(promises);
+}
+
+
 const getLatestEpisodesAdded = async () =>{
   const BASE_URL = 'https://pedropolis.tv/';
   const res = await fetch(BASE_URL);
@@ -425,5 +480,7 @@ module.exports = {
   getLatestEpisodes,
   getLatestEpisodesAdded,
   getSeriesVideoContent,
-  getMoviesVideoContent
+  getMoviesVideoContent,
+  getBestMoviesRanked,
+  getBestSeriesRanked
 };

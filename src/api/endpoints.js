@@ -99,5 +99,27 @@ router.get('/video_movie/:id' , (req , res) =>{
     });
 });
 
+router.get('/best_movies' , (req , res) =>{
+  f.getBestMoviesRanked()
+    .then((ranked_movies) =>{
+      res.status(200).json({
+        ranked_movies
+      });
+    }).catch(err =>{
+      console.log(err);
+    });
+});
+
+router.get('/best_series' , (req , res) =>{
+  f.getBestSeriesRanked()
+    .then((ranked_series) =>{
+      res.status(200).json({
+        ranked_series
+      });
+    }).catch(err =>{
+      console.log(err);
+    });
+});
+
 
 module.exports = router;

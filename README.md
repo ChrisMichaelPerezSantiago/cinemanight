@@ -27,6 +27,8 @@
 ## 🚀 ... Deployment API Examples [ENDPOINTS]
 - `https://cinemanight.chrismichael.now.sh/api/v1/series/1`
 - `https://cinemanight.chrismichael.now.sh/api/v1/movies/1`
+- `https://cinemanight.chrismichael.now.sh/api/v1/best_series`
+- `https://cinemanight.chrismichael.now.sh/api/v1/movies`
 - `https://cinemanight.chrismichael.now.sh/api/v1/search/Dark`
 - `https://cinemanight.chrismichael.now.sh/api/v1/genres/accion/1`
 - `https://cinemanight.chrismichael.now.sh/api/v1/episodes/1`
@@ -39,6 +41,8 @@
 - search       
 - getAllSeries
 - getAllMovies
+- getBestMoviesRanked
+- getBestSeriesRanked
 - getByGenres
 - getLatestEpisodes
 - getLatestEpisodesAdded
@@ -323,6 +327,283 @@
   ]
 }
 ```
+
+### getBestMoviesRanked()
+```json
+// 20190930210751
+// http://localhost:5000/api/v1/best_movies
+
+{
+  "ranked_movies": [
+    {
+      "id": "ver-deadpool-the-musical-2-ultimate-disney-parody",
+      "title": "Deadpool The Musical 2 – Ultimate Disney Parody",
+      "type": "pelicula",
+      "poster": "https://pedropolis.tv/wp-content/uploads/2018/12/riM76cHmPu2hlUe96pIHticJkIj-90x135.jpg",
+      "ranking": "1",
+      "rating": "9.9",
+      "extra": [
+        {
+          "air_date": "Jul. 10, 2018",
+          "country": "USA",
+          "runtime": "12 Min",
+          "rated": "N/A",
+          "cast_members": {
+            "creator": {
+              "name": "Julian Higgins",
+              "poster": "https://pedropolis.tv/wp-content/themes/dooplay/assets/img/no_foto_cast.png"
+            },
+            "members_list": [
+              {
+                "members_info": [
+                  {
+                    "characters": {
+                      "real_name": "unknown",
+                      "character": "unknown"
+                    },
+                    "poster": "unknown"
+                  }
+                ]
+              }
+            ]
+          },
+          "similar_movies": [
+            {
+              "id": "sing-street",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2016/03/stret-185x278.jpg"
+            },
+            {
+              "id": "ver-stuck",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2019/07/bI4uwIrzgwVjnLYq2HyQH8CKWHi-185x278.jpg"
+            },
+            {
+              "id": "la-bamba",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2018/09/cjgXvTixDiUsQbfwrxoT1m0kr2E-185x278.jpg"
+            },
+            {
+              "id": "ver-quien-te-cantara",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2019/02/mmV5TX3IYy7NEd6WEHgpnM6VLZx-185x278.jpg"
+            },
+            {
+              "id": "ver-como-hablar-con-chicas-en-las-fiestas",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2019/06/v6mPfyGshwXd1R6kQlMEyZ8Zu2s-185x278.jpg"
+            },
+            {
+              "id": "ver-whitney",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2018/11/j1c6dTycYBMZs2T1wKA6bknLLa6-185x278.jpg"
+            },
+            {
+              "id": "brads-status",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2018/01/pEp3ow4sBrqRMUjoDtu6HnDyEdx-185x278.jpg"
+            },
+            {
+              "id": "ver-beats",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2019/06/b8P13nIvkkizVBzd2RpegsRt5zP-185x278.jpg"
+            },
+            {
+              "id": "ver-alcanzando-tu-sueno",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2019/08/cUdFc696YZWgOjARoiJ0CRemXs1-185x278.jpg"
+            },
+            {
+              "id": "ver-bohemian-rhapsody-la-historia-de-freddie-mercury",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2018/11/sVmTZxuXhSGYmNL8gbv2XcKTFUy-185x278.jpg"
+            },
+            {
+              "id": "ver-el-mago",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2019/09/jdlmzPtiF8tAjY1iEvQIlm596Dp-185x278.jpg"
+            },
+            {
+              "id": "ver-el-potro-lo-mejor-del-amor",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2019/01/jRHcUg20jR90fdnb11GUd8d7CIX-185x278.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    // ...........
+  ]
+}
+```
+
+### getBestSeriesRanked()
+
+```json
+/ 20190930210838
+// http://localhost:5000/api/v1/best_series
+
+{
+  "ranked_series": [
+    {
+      "id": "the-passage",
+      "title": "The Passage",
+      "type": "serie",
+      "poster": "https://pedropolis.tv/wp-content/uploads/2019/01/aquYKS9cFzmULgV6mSnS2RPjxdp-90x135.jpg",
+      "ranking": "1",
+      "rating": "9.5",
+      "extra": [
+        {
+          "channel": "FOX",
+          "first_air_date": " First air date Jan. 14, 2019",
+          "last_air_date": " Última transmisión Jan. 14, 2019",
+          "total_seasons": "1",
+          "total_episodes": "2",
+          "season_list": [
+            {
+              "season": 1,
+              "episodes": [
+                "1x1",
+                "1x2",
+                "1x3",
+                "1x4",
+                "1x5",
+                "1x6",
+                "1x7",
+                "1x8",
+                "1x9",
+                "1x10"
+              ]
+            }
+          ],
+          "cast_members": {
+            "creator": {
+              "name": "Marcos Siega",
+              "poster": "https://image.tmdb.org/t/p/w92/zRwpEHABk6PJx3GVRtaU8J2cknW.jpg"
+            },
+            "members_list": [
+              {
+                "members_info": [
+                  {
+                    "characters": {
+                      "real_name": "Mark-Paul Gosselaar isBrad Wolgast",
+                      "character": "Brad Wolgast"
+                    },
+                    "poster": "https://image.tmdb.org/t/p/w92/y5GHzu45UsMzIEOUeGM4jIurFr7.jpg"
+                  },
+                  {
+                    "characters": {
+                      "real_name": "Saniyya Sidney isAmy Bellafonte",
+                      "character": "Amy Bellafonte"
+                    },
+                    "poster": "https://image.tmdb.org/t/p/w92/y47xWvuXipPgPEkz7uOvYx5XR7s.jpg"
+                  },
+                  {
+                    "characters": {
+                      "real_name": "Caroline Chikezie isMajor Nickole Sykes",
+                      "character": "Major Nickole Sykes"
+                    },
+                    "poster": "https://image.tmdb.org/t/p/w92/qXHS3UhFx2dd6tSuBpPqfSbAy3.jpg"
+                  },
+                  {
+                    "characters": {
+                      "real_name": "Vincent Piazza isClark Richards",
+                      "character": "Clark Richards"
+                    },
+                    "poster": "https://image.tmdb.org/t/p/w92/fCXXe8Lp4SU65wmEJYSTaJhdYSC.jpg"
+                  },
+                  {
+                    "characters": {
+                      "real_name": "Jamie McShane isTim Fanning",
+                      "character": "Tim Fanning"
+                    },
+                    "poster": "https://image.tmdb.org/t/p/w92/jG5fakX3JmrnFevPGmlMnkCohUo.jpg"
+                  },
+                  {
+                    "characters": {
+                      "real_name": "Brianne Howey isShauna Babcock",
+                      "character": "Shauna Babcock"
+                    },
+                    "poster": "https://image.tmdb.org/t/p/w92/znB9fvTAj1Q9hRv32ocJljZ2Wr3.jpg"
+                  },
+                  {
+                    "characters": {
+                      "real_name": "Emmanuelle Chriqui isDr. Lila Kyle",
+                      "character": "Dr. Lila Kyle"
+                    },
+                    "poster": "https://image.tmdb.org/t/p/w92/oEvHO6yJnGHvD5vObI31UglPcwP.jpg"
+                  },
+                  {
+                    "characters": {
+                      "real_name": "Zach Appelman isAgent Phil Doyle",
+                      "character": "Agent Phil Doyle"
+                    },
+                    "poster": "https://image.tmdb.org/t/p/w92/hWYEFjo5NJGUxTzUyewm3znsIZC.jpg"
+                  },
+                  {
+                    "characters": {
+                      "real_name": "Tyler Barnhardt isJacob",
+                      "character": "Jacob"
+                    },
+                    "poster": "https://pedropolis.tv/wp-content/themes/dooplay/assets/img/no_foto_cast.png"
+                  },
+                  {
+                    "characters": {
+                      "real_name": "unknown",
+                      "character": "unknown"
+                    },
+                    "poster": "unknown"
+                  }
+                ]
+              }
+            ]
+          },
+          "similar_series": [
+            {
+              "id": "ver-secretos-de-estado",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2019/02/kAZeKzVBPgET4kTitPfyWE1fEXo-185x278.jpg"
+            },
+            {
+              "id": "siempre-bruja",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2019/02/bgACgk9Ws4mB8IGTe9ryLIi1Fdo-185x278.jpg"
+            },
+            {
+              "id": "the-pact",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2019/02/xccEjKZKPcoj7xCGKArHzWGvJl7-185x278.jpg"
+            },
+            {
+              "id": "ver-yellowstone",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2019/07/3ePlESS6eyUj9W7yPEbzhwWaiFo-185x278.jpg"
+            },
+            {
+              "id": "ver-alta-mar",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2019/05/lTVMKWrQ3dZwHuCH6gM8p2WHQE5-185x278.jpg"
+            },
+            {
+              "id": "ver-wisting",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2019/07/1Pko7dNopvKEyfPDLAwDuPAcc4Q-185x278.jpg"
+            },
+            {
+              "id": "ver-the-detail",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2019/08/9Ec8QfalJdDDWoAGTTjMH1V3PTD-185x278.jpg"
+            },
+            {
+              "id": "reverie",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2018/05/reve-185x278.jpg"
+            },
+            {
+              "id": "hospital-valle-norte",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2019/01/52qh7pJI7NUYkuZXVwxt510PM7g-185x278.jpg"
+            },
+            {
+              "id": "ver-homecoming",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2018/11/dkCpPQbBBxEZQljGATEgrP0N9i8-185x278.jpg"
+            },
+            {
+              "id": "bodyguard",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2018/08/qWEnE5qcOXTg2CAgBEpJbUP4IIE-185x278.jpg"
+            },
+            {
+              "id": "ver-swamp-thing",
+              "poster": "https://pedropolis.tv/wp-content/uploads/2019/06/dD3HcMczLC9wNvfNzx4pZVyl6q8-185x278.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    // ...........
+  ]
+}
+```
+
 
 ### search([title])
 ```json
